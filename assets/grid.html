@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 0.5fr 1.5fr;
+            grid-template-rows: 0.7fr 1.5fr;
+            gap: 0px 0px;
+            grid-template-areas:
+            "def def def"
+            "code code ejemplo";
+            height: 100vh;
+        }       
+        .code { grid-area: code; }
+        .ejemplo { grid-area: ejemplo; }
+        .def { grid-area: def;
+            text-align: center;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="code"></div>
+        <div class="ejemplo"></div>
+        <div class="def">
+            <p>La pseudo-clase :empty de CSS representa cualquier elemento que no tenga ningún elemento o espacios en blanco dentro de ella, que no tenga ningún hijo. </p>
+        </div>
+      </div>
+
+</body>
+</html>

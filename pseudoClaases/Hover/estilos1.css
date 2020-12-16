@@ -1,0 +1,18 @@
+/* FORMA 1 */
+
+#cur1{
+    color: brown;
+    font-size: 50px;
+}
+
+#cur1:hover{
+    color: chartreuse;
+    
+}
+
+#cur2{
+    background-color: rgb(0, 131, 148);
+}
+#cur2:hover{
+color: white;
+}

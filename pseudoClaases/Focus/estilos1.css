@@ -1,0 +1,14 @@
+/* FORMA 1 */
+
+
+
+#bar:focus{
+    Background-color: yellow;
+}
+#box:focus{
+    border: solid blue;
+}
+#tag:focus{
+color: blue;
+}
+

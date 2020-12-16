@@ -1,0 +1,124 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;0,900;1,600;1,800&display=swap" rel="stylesheet">
+		<title>:VISITED</title>
+
+		<style type="text/css">
+			body{
+				background-color: #ffffff;
+				font-family: 'Raleway', sans-serif;
+				font-weight: bold;
+			}
+			.tituloP{
+				text-align: center;
+				margin-top: 5%;
+				color: rgb(48, 48, 48);
+				font-size: 60px;
+			}
+			hr{
+				margin-top: -35px;
+				height: 4px;
+				width: 19%;
+				background-color: rgb(48, 48, 48);
+				border-color: rgb(48, 48, 48);
+			}
+			.container{
+				width: 98vw;
+				height: 95vh;
+				overflow: hidden;
+			}
+			.container::after{
+				content: '';
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-image: url(images/team_building_.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+				z-index: -1;
+				filter: blur(10px);
+			}
+			#definicion{
+				height: 25%;
+				width: 22%;
+				background-color: rgb(48, 48, 48);
+				margin-top: 2%;
+				margin-left: calc(50% - 11%);
+				border-radius: 5px;		
+			}
+			.tituloD{
+				text-align: center;
+				padding-top: 5px;
+				color: #52bad1;
+				font-size: 20px;
+			}
+
+			#cont{
+				position: relative;
+				height: 50%;
+				width: 100%;
+				top: 3%;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				justify-items: center;
+				align-items: center;
+			}
+			.contblock{
+				height: 60%;
+				width: 60%;
+				background-color: rgb(48, 48, 48);
+				border-radius: 5px;
+			}
+			.p{
+				color: white;
+				font-weight: none;
+				font-size: 17px;
+				text-align: center;
+				padding-top: 5px;
+			}
+			a{
+				position:relative;
+				top:20%;
+				left:35%;
+				font-size: 25px;
+			}
+			a:visited{
+				color:green;
+			}
+		</style>
+	</head>
+
+<body>
+	<div class="container">
+		<h1 class="tituloP">:Visited</h1>
+		<hr>
+		<div id="definicion">
+			<h1 class="tituloD">DEFINICIÓN</h1>
+			<p class="p">El Visited funciona solo cuando hay una referencia < a > y dentro de este hay un link. <br>
+				Lo que hace el :visited es, dar formato al "link o referencia" despues de ser clicado.</p>
+		</div>
+		<div id="cont">
+			<div class="contblock">
+				<img id="htmlc" src="./caphtml.PNG">
+				<img id="cssc" src="./capcss.PNG">
+			</div>
+			<div class="contblock">
+
+				<a href="http:\\spacex.eu" target="_blank">SpaceX </a> <br>
+				<a href="http:\\youtube.es" target="_blank">Youtube </a><br>
+				<a href="http:\\aula0.cuatrovientos.org" target="_blank">Aula0</a><br>
+				<a href="http:\\youtube.es" target="_blank">Youtube </a><br>
+				<a href="http:\\twitch.es" target="_blank">Twitch</a>
+			
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

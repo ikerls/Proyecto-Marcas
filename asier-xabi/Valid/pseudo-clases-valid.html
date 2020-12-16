@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;0,900;1,600;1,800&display=swap" rel="stylesheet">
+		<title>CSS input:checked gallery example - MDN</title>
+
+		<style type="text/css">
+			body{
+				background-color: #ffffff;
+				font-family: 'Raleway', sans-serif;
+				font-weight: bold;
+			}
+			.tituloP{
+				text-align: center;
+				margin-top: 5%;
+				color: rgb(48, 48, 48);
+				font-size: 60px;
+			}
+			hr{
+				margin-top: -35px;
+				height: 4px;
+				width: 19%;
+				background-color: rgb(48, 48, 48);
+				border-color: rgb(48, 48, 48);
+			}
+			.container{
+				width: 98vw;
+				height: 95vh;
+				overflow: hidden;
+			}
+			
+			.container::after{
+				content: '';
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-image: url(images/team_building_.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+				z-index: -1;
+				filter: blur(10px);
+			}
+			#definicion{
+				height: 17%;
+				width: 22%;
+				background-color: rgb(48, 48, 48);
+				margin-top: 2%;
+				margin-left: calc(50% - 11%);
+				border-radius: 15px;			
+			}
+			.tituloD{
+				text-align: center;
+				padding-top: 5px;
+				color: #52bad1;
+				font-size: 20px;
+			}
+
+			#cont{
+				position: relative;
+				height: 50%;
+				width: 100%;
+				top: 3%;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				justify-items: center;
+				align-items: center;
+			}
+			.contblock{
+				height: 100%;
+				width: 90%;
+				border-radius: 15px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				color: white;
+			}
+			#contblock2{
+				background-color: rgb(48, 48, 48);
+				height: 50%;
+				width: 50%;
+			}
+			#definicion p{
+				color: white;
+				font-weight: normal;
+				padding-top: 5px;
+				font-size: 15px;
+				text-align: center;
+			}
+			.contblock div {
+				margin: 2% 0;
+			}
+			#html{
+				height: 32%;
+				width: 60%;
+				background-size: cover;
+				border-radius: 15px;
+				box-shadow: 0px 0px 15px black;
+				display: flex;
+				transition: .5s;
+			}
+			#css{
+				height: 40%;
+				width: 40%;
+				background-size: cover;
+				border-radius: 15px;
+				box-shadow: 0px 0px 15px black;
+				margin-top: 5%;
+				transition: .5s;
+			}
+			#html:hover{
+				filter: blur(2px);
+				transition: .5s;
+			}
+			#css:hover{
+				filter: blur(2px);
+				transition: .5s;
+			}
+			.nombreH{
+				transition: .5s;
+				top: 16%;
+			}
+			.nombreC{
+				top: 62%;
+				transition: .5s;
+			}
+			#nombre{
+				position: absolute;
+				color: white;
+				font-size: 3vh;
+				font-weight: bold;
+				opacity: 0;
+			}
+			#html:hover ~ .nombreH{
+				opacity: 1;
+				transition: .5s;
+			}
+			#css:hover ~ .nombreC{
+				opacity: 1;
+				transition: .5s;
+			}
+			label{
+				color: white;
+			}
+			input {
+				border: 1px solid black;
+				color: black;
+				padding: 5px;
+				border-radius: 5px;
+			}
+			input:invalid{
+				background-color: pink;
+			}
+			input:valid{
+				background-color: #52bad1;
+			}
+			a{
+				text-decoration: none;
+			}
+			.back{
+				position: absolute;
+				transition: .3s;
+			}
+			.back hr{
+				margin-top: -16px;
+				width: 100%;
+				height: 2px;
+			}
+			.back a{
+				color: rgb(48, 48, 48);
+				text-decoration: none;
+			}
+			.back a:hover{
+				color: #52bad1;
+				transition: .3s;
+			}
+			form:invalid{
+				border: 5px solid #ffdddd;
+				padding: 20px;
+				border-radius: 15px;
+			}
+			form:valid{
+				border: 5px solid #52bad1;
+				padding: 20px;
+				border-radius: 15px;
+			}
+		</style>
+	</head>
+
+<body>
+	<div class="container">
+		<div class="back">
+			<a href="../Inicio/Inicio.html"><p>BACK</p></a>
+			<hr>
+		</div>
+		<h1 class="tituloP">:valid & :invalid</h1>
+		<hr>
+		<div id="definicion">
+			<h1 class="tituloD">DEFINICIÓN</h1>
+			<p>representa cualquier elemento "input" u otro elemento "form" cuyos contenidos sean validos o invalidos.</p>
+		</div>
+		<div id="cont">
+			<div class="contblock">
+				<img id="html"src="./html-css-image/html.png">
+					<p class="nombreH" id="nombre">HTML</p>
+				<img id="css"src="./html-css-image/css.png">
+					<p class="nombreC" id="nombre">CSS</p>
+			</div>
+			<div class="contblock" id="contblock2">
+				<form>
+					CORREO: <input type="email" name="correo">
+				</form	>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

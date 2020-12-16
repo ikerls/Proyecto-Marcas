@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;0,900;1,600;1,800&display=swap" rel="stylesheet">
+		<title>CSS input:checked gallery example - MDN</title>
+
+		<style type="text/css">
+			body{
+				background-color: #ffffff;
+				font-family: 'Raleway', sans-serif;
+				font-weight: bold;
+			}
+			.tituloP{
+				text-align: center;
+				margin-top: 5%;
+				color: rgb(48, 48, 48);
+				font-size: 60px;
+			}
+			hr{
+				margin-top: -35px;
+				height: 4px;
+				width: 19%;
+				background-color: rgb(48, 48, 48);
+				border-color: rgb(48, 48, 48);
+			}
+			.container{
+				width: 98vw;
+				height: 95vh;
+				overflow: hidden;
+			}
+			.container::after{
+				content: '';
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-image: url(images/team_building_.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+				z-index: -1;
+				filter: blur(10px);
+			}
+			#definicion{
+				height: 17%;
+				width: 26%;
+				background-color: rgb(48, 48, 48);
+				margin-top: 2%;
+				margin-left: calc(50% - 13%);
+				border-radius: 15px;			
+			}
+			.tituloD{
+				text-align: center;
+				padding-top: 5px;
+				color: #52bad1;
+				font-size: 20px;
+			}
+
+			#cont{
+				position: relative;
+				height: 50%;
+				width: 100%;
+				top: 3%;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				justify-items: center;
+				align-items: center;
+			}
+			.contblock{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+				width: 70%;
+				border-radius: 15px;
+				flex-direction: column;
+			}
+			#contblock2{
+				background-color: rgb(48, 48, 48);
+				height: 40%;
+				width: 40%;
+			}
+			#definicion p{
+				color: white;
+				font-weight: normal;
+				padding-top: 5px;
+				font-size: 15px;
+				text-align: center;
+			}
+			label{
+				color: white;
+				font-weight: normal;
+				font-size: 3vh;
+			}
+			#con:checked + label{
+				color: #52bad1;
+			}
+			.contblock div {
+				margin: 2% 0;
+			}
+			#html{
+				height: 40%;
+				width: 80%;
+				background-size: cover;
+				border-radius: 15px;
+				box-shadow: 0px 0px 15px black;
+				display: flex;
+				transition: .5s;
+			}
+			#css{
+				height: 40%;
+				width: 50%;
+				background-size: cover;
+				border-radius: 15px;
+				box-shadow: 0px 0px 15px black;
+				margin-top: 5%;
+				transition: .5s;
+			}
+			#html:hover{
+				filter: blur(2px);
+				transition: .5s;
+			}
+			#css:hover{
+				filter: blur(2px);
+				transition: .5s;
+			}
+			.nombreH{
+				transition: .5s;
+				top: 16%;
+			}
+			.nombreC{
+				top: 62%;
+				transition: .5s;
+			}
+			#nombre{
+				position: absolute;
+				color: white;
+				font-size: 3vh;
+				font-weight: bold;
+				opacity: 0;
+			}
+			#html:hover ~ .nombreH{
+				opacity: 1;
+				transition: .5s;
+			}
+			#css:hover ~ .nombreC{
+				opacity: 1;
+				transition: .5s;
+			}
+			.avanzado{
+				height: 6%;
+				width: 3%;
+				background-color: #52bad1;
+				margin: auto;
+				border-radius: 200px;
+				transition: .5s;
+				
+			}
+			.nombreA{
+				color: white;
+				font-weight: bold;
+				font-size: 2.1vh;
+				transition: .5s;
+				opacity: 0;
+				margin-top: 5px;
+				text-align: center;
+			}
+			.avanzado:hover{
+				width: 8%;
+				transition: .5s;
+				box-shadow: 0px 0px 5px black;
+				padding-top: 5px;
+				height: 5%;
+			}
+			.avanzado:hover .nombreA{
+				transition: .5s;
+				opacity: 1;
+				
+			}
+			a{
+				text-decoration: none;
+			}
+			.back{
+				position: absolute;
+				transition: .3s;
+			}
+			.back hr{
+				margin-top: -16px;
+				width: 100%;
+				height: 2px;
+			}
+			.back a{
+				color: rgb(48, 48, 48);
+				text-decoration: none;
+			}
+			.back a:hover{
+				color: #52bad1;
+				transition: .3s;
+			}
+		</style>
+	</head>
+
+<body>
+	<div class="container">
+		<div class="back">
+			<a href="../Inicio/Inicio.html"><p>BACK</p></a>
+			<hr>
+		</div>
+		<h1 class="tituloP">:CHECKED</h1>
+		<hr>
+		<div id="definicion">
+			<h1 class="tituloD">DEFINICIÓN</h1>
+			<p>Representa cualquier "RADIO", "CHECKBOX" u "OPTION" que ha sido marcado y ha pasado a un estado ON</p>
+		</div>
+		<div id="cont">
+			<div class="contblock">
+				<img id="html"src="./html-css-image/html.png">
+					<p class="nombreH" id="nombre">HTML</p>
+				<img id="css" src="./html-css-image/css.png">
+					<p class="nombreC" id="nombre">CSS</p>
+			</div>
+			<div class="contblock" id="contblock2">
+				<div>
+					<input type="radio" name="my-input" id="con">
+					<label for="yes">Yes</label>
+					<input type="radio" name="my-input" id="con">
+					<label for="no">No</label>
+				</div>
+				<div>
+					<input type="radio" name="my-input" id="sin">
+					<label for="yes">Yes</label>
+					<input type="radio" name="my-input" id="sin">
+					<label for="no">No</label>
+				</div>
+			</div>
+		</div>
+		<a href="./css-checked-gallery.html"><div class="avanzado">
+			<p class="nombreA">AVANZADO</p>
+		</div></a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;0,900;1,600;1,800&display=swap" rel="stylesheet">
+		<title>:hover</title>
+
+		<style type="text/css">
+			body{
+				background-color: #ffffff;
+				font-family: 'Raleway', sans-serif;
+				font-weight: bold;
+			}
+			.tituloP{
+				text-align: center;
+				margin-top: 5%;
+				color: rgb(48, 48, 48);
+				font-size: 60px;
+			}
+			hr{
+				margin-top: -35px;
+				height: 4px;
+				width: 50%;
+				background-color: rgb(48, 48, 48);
+				border-color: rgb(48, 48, 48);
+			}
+			.container{
+				width: 98vw;
+				height: 95vh;
+				overflow: hidden;
+			}
+			
+			.container::after{
+				content: '';
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-image: url(images/team_building_.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+				z-index: -1;
+				filter: blur(10px);
+			}
+			#definicion{
+				height: 17%;
+				width: 22%;
+				background-color: rgb(48, 48, 48);
+				margin-top: 2%;
+				margin-left: calc(50% - 11%);
+				border-radius: 15px;			
+			}
+			.tituloD{
+				text-align: center;
+				padding-top: 5px;
+				color: #52bad1;
+				font-size: 20px;
+			}
+
+			#cont{
+				position: relative;
+				height: 50%;
+				width: 100%;
+				top: 3%;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				justify-items: center;
+				align-items: center;
+			}
+			.contblock{
+				height: 100%;
+				width: 90%;
+				border-radius: 15px;
+				margin-top: -8%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+			#contblock2{
+				background-color: rgb(48, 48, 48);
+				height: 35%;
+				width: 50%;
+			}
+			#definicion p{
+				color: white;
+				font-weight: normal;
+				padding-top: 5px;
+				font-size: 15px;
+				text-align: center;
+				padding: 2%;
+			}
+			.contblock div {
+				margin: 0% 0;
+			}
+			#html{
+				height: 35%;
+				width: 65%;
+				background-size: cover;
+				border-radius: 15px;
+				box-shadow: 0px 0px 15px black;
+				display: flex;
+				transition: .5s;
+				background-color: black;
+			}
+			#css{
+				height: 45%;
+				width: 48%;
+				background-size: cover;
+				border-radius: 15px;
+				box-shadow: 0px 0px 15px black;
+				margin-top: 5%;
+				transition: .5s;
+			}
+			#html:hover{
+				filter: blur(2px);
+				transition: .5s;
+			}
+			#css:hover{
+				filter: blur(2px);
+				transition: .5s;
+			}
+			.nombreH{
+				transition: .5s;
+				top: 5%;
+			}
+			.nombreC{
+				top: 54%;
+				transition: .5s;
+			}
+			#nombre{
+				position: absolute;
+				color: white;
+				font-size: 3vh;
+				font-weight: bold;
+				opacity: 0;
+			}
+			#nombre2{
+				position: absolute;
+				color: white;
+				font-size: 3vh;
+				font-weight: bold;
+				opacity: 0;
+			}
+			#html:hover ~ .nombreH{
+				opacity: 1;
+				transition: .5s;
+			}
+			#css:hover ~ .nombreC{
+				opacity: 1;
+				transition: .5s;
+			}
+			a{
+				text-decoration: none;
+			}
+			.back{
+				position: absolute;
+				transition: .3s;
+			}
+			.back hr{
+				margin-top: -16px;
+				width: 100%;
+				height: 2px;
+			}
+			.back a{
+				color: rgb(48, 48, 48);
+				text-decoration: none;
+			}
+			.back a:hover{
+				color: #52bad1;
+				transition: .3s;
+			}
+			#contblock2 p{
+				color: white;
+				font-weight: normal;
+				text-align: center;
+			}
+			#cur1:hover ~ #cur2{
+				background-color: #52bad1;
+			}
+			#cur2{
+				border-radius: 15px;
+				transition: .5s;
+				width: 50%;
+			}
+			span{
+				transition: .5s;
+			}
+			span:hover{
+				color:#52bad1;
+				transition: .5s;
+				font-size: 3.5vh;
+				font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+
+<body>
+	<div class="container">
+		<div class="back">
+			<a href="../Inicio/Inicio.html"><p>BACK</p></a>
+			<hr>
+		</div>
+		<h1 class="tituloP">:in-range & :out-of-range</h1>
+		<hr>
+		<div id="definicion">
+			<h1 class="tituloD">DEFINICIÓN</h1>
+			<p>El Hover funciona con todos los elementos y modifica este elemento cuando el usuario pasa por encima con el cursor.</p>
+		</div>
+		<div id="cont">
+			<div class="contblock">
+				<img id="html" src="./html-css-image/html.png" alt="ejemplo código html">
+					<p class="nombreH" id="nombre">HTML</p>
+				<img id="css" src="./html-css-image/css.png" alt="ejemplo código css">
+					<p class="nombreC" id="nombre2">CSS</p>
+			</div>
+			<div class="contblock" id="contblock2">
+				<p id="cur1">Ponte aqui!</p>
+				<div id="cur2">
+					<p>Esto es una caja <br><span>Ponte aqui!</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

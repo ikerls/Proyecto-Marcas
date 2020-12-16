@@ -1,0 +1,89 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.contenedor{
+    display: flex;
+    width: 100%;
+    height: 75vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.cajas{
+    flex:1;
+    overflow: hidden;
+    margin: 8px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.20);
+    line-height: 0;
+    transition: all 600ms;
+    background-color: rgba(48,48,48) ;
+}
+span{
+    color:#52bad1;
+    font-weight: bold;
+}
+.cajas > img{
+    width: 100%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: all 300ms;
+}
+
+.cajas > span{
+    font-size: 35px;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+
+.cajas:hover{
+    flex: 50%;
+}
+
+.cajas:hover > img{
+    width: 100%;
+    height: 100%;
+}
+h1{
+    text-align: center;
+    color: rgb(48, 48, 48);
+    font-size: 60px;
+}
+.back{
+    position: absolute;
+    transition: .3s;
+}
+.back hr{
+    margin-top: -16px;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(48,48,48);
+}
+.back a{
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+}
+.back a:hover{
+    color: #52bad1;
+    transition: .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;0,900;1,600;1,800&display=swap");
+
 body{
     background-color: #ffffff;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
 }
 .tituloP{
     text-align: center;
     margin-top: 5%;
     color: rgb(48, 48, 48);
     font-size: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
 hr{
     margin-top: -35px;
@@ -116,7 +120,7 @@ p:target{
     width: 25rem;
     position: relative;
     padding: 1.5em;
-    background-color: #52bad1;
+    background-color: #8be2ff;
   }
   
   /* Botón Cerrar */

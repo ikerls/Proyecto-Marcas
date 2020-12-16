@@ -5,7 +5,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 .contblock2 p:first-child {
-    color: lime;
+    color: #52bad1;
     background-color: black;
     padding: 5px;
 }
@@ -43,13 +43,14 @@ hr{
     filter: blur(10px);
 }
 #definicion{
-    height: 18%;
-    width: 25%;
+    display: inline-flex;
+    flex-direction: column;
+    width: 30%;
     background-color: rgb(48, 48, 48);
     margin-top: 2%;
-    margin-left: calc(50% - 11%);
-    border-radius: 5px;	
-    text-align: center;		
+    margin-left: calc(50% - 15%);
+    border-radius: 5px;
+    text-align: center;			
 }
 p{
     color:white;

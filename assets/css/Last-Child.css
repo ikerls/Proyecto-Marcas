@@ -4,7 +4,6 @@ body{
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
 }
-
 .tituloP{
     text-align: center;
     margin-top: 5%;
@@ -39,13 +38,14 @@ hr{
     filter: blur(10px);
 }
 #definicion{
-    height: 8%;
-    width: 25%;
+    display: inline-flex;
+    flex-direction: column;
+    width: 30%;
     background-color: rgb(48, 48, 48);
     margin-top: 2%;
-    margin-left: calc(50% - 11%);
-    border-radius: 5px;	
-    text-align: center;		
+    margin-left: calc(50% - 15%);
+    border-radius: 5px;
+    text-align: center;			
 }
 p{
     color:white;
@@ -56,7 +56,6 @@ p{
     color: #52bad1;
     font-size: 20px;
 }
-
 #cont{
     position: relative;
     height: 50%;
@@ -71,7 +70,6 @@ p{
     margin-top: 12px;
     height: auto;
     width: 60%;
-    /* background-color:aliceblue; */
     border-radius: 5px;
     float: left;
     text-align: center;
@@ -94,5 +92,5 @@ p{
     color: #ffffff;
 }
 article :last-child {
-    background-color: blue;
+    background-color: #52bad1;
 }

@@ -90,79 +90,19 @@ hr{
     max-height: 100%;
     display: block;
 }
-/* EJEMPLO */
-p:target{
-    border: 4px solid #52bad1;
-}
-#ejemploAvz{
-    background-color: rgb(48, 48, 48);
-    color: #ffffff;
-    width: 30%;
-    border-radius: 5px;
+.caja{
+    height: 120px;
+    width: 140px;
+    background: #a8172f;
+    float: left;
+    margin: 12px;
     text-align: center;
-    margin-top: 30px;
-    margin-left: calc(50% - 15%);
 }
-/* ejemplo avanzado */
-/* lightbox sin abrir */
-.lightbox {
-    display: none;
-  }
-  
-  /* lightbox abierto */
-  .lightbox:target {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Contenido de Lightbox */
-  .lightbox figcaption {
-    width: 25rem;
-    position: relative;
-    padding: 1.5em;
-    background-color: #52bad1;
-  }
-  
-  /* Botón Cerrar */
-  .lightbox .close {
-    position: relative;
-    display: block;
-  }
-  
-  .lightbox .close::after {
-    right: -1rem;
-    top: -1rem;
-    width: 2rem;
-    height: 2rem;
-    position: absolute;
-    display: flex;
-    z-index: 1;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    border-radius: 50%;
-    color: white;
-    content: "×";
-    cursor: pointer;
-  }
-  
-  /* superposición Lightbox */
-  .lightbox .close::before {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: rgba(0,0,0,.7);
-    content: "";
-    cursor: default;
-  }
-a{
-    color: #ffffff;
+.caja:empty{
+    background-color: #96da30;
+}
+.box{
+    background-color: aliceblue;
+    margin: 12px;
+    border-radius: 8px;
 }

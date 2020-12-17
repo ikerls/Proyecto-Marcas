@@ -4,7 +4,7 @@ body{
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
 }
-.tituloP{
+#tituloP{
     text-align: center;
     margin-top: 5%;
     color: rgb(48, 48, 48);
@@ -19,12 +19,12 @@ hr{
     background-color: rgb(48, 48, 48);
     border-color: rgb(48, 48, 48);
 }
-.container{
+#container{
     width: 98vw;
     height: auto;
     overflow: hidden;
 }
-.container::after{
+#container::after{
     content: '';
     width: 100%;
     height: 100%;
@@ -49,7 +49,7 @@ hr{
     border-radius: 5px;
     text-align: center;		
 }
-.tituloD{
+#tituloD{
     text-align: center;
     padding-top: 5px;
     color: #52bad1;
@@ -66,7 +66,7 @@ hr{
     justify-items: center;
     align-items: center;
 }
-.contblock{
+#contblock{
     margin-top: 12px;
     height: auto;
     width: 60%;
@@ -75,7 +75,7 @@ hr{
     float: left;
     text-align: center;
 }
-.contblock2{
+#contblock2{
     margin-top: 12px;
     height: auto;
     width: 45%;
@@ -85,7 +85,7 @@ hr{
     text-align: center;
     color: #ffffff;
 }
-.contblock img{
+#contblock img{
     max-width: 100%;
     max-height: 100%;
     display: block;
@@ -97,20 +97,20 @@ input:enabled{
 input:disabled{
     background-color: #808080;
 }
-.back{
+#back{
     position: absolute;
     transition: .3s;
 }
-.back hr{
+#back hr{
     margin-top: -16px;
     width: 100%;
     height: 2px;
 }
-.back a{
+#back a{
     color: rgb(48, 48, 48);
     text-decoration: none;
 }
-.back a:hover{
+#back a:hover{
     color: #52bad1;
     transition: .3s;
 }

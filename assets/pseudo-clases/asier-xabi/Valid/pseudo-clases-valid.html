@@ -120,26 +120,26 @@
 				filter: blur(2px);
 				transition: .5s;
 			}
-			.nombreH{
+			#nombreH{
 				transition: .5s;
 				top: 16%;
 			}
-			.nombreC{
+			#nombreC{
 				top: 62%;
 				transition: .5s;
 			}
-			#nombre{
+			.nombre{
 				position: absolute;
 				color: white;
 				font-size: 3vh;
 				font-weight: bold;
 				opacity: 0;
 			}
-			#html:hover ~ .nombreH{
+			#html:hover ~ #nombreH{
 				opacity: 1;
 				transition: .5s;
 			}
-			#css:hover ~ .nombreC{
+			#css:hover ~ #nombreC{
 				opacity: 1;
 				transition: .5s;
 			}
@@ -205,10 +205,10 @@
 		</div>
 		<div id="cont">
 			<div class="contblock">
-				<img id="html"src="./html-css-image/html.png">
-					<p class="nombreH" id="nombre">HTML</p>
-				<img id="css"src="./html-css-image/css.png">
-					<p class="nombreC" id="nombre">CSS</p>
+				<img id="html"src="./html-css-image/html.png" alt="codigo html">
+					<p id="nombreH" class="nombre">HTML</p>
+				<img id="css"src="./html-css-image/css.png" alt="codigo css">
+					<p id="nombreC" class="nombre">CSS</p>
 			</div>
 			<div class="contblock" id="contblock2">
 				<form>

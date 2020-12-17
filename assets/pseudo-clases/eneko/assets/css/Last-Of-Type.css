@@ -22,7 +22,7 @@ hr{
 }
 .container{
     width: 98vw;
-    height: 95vh;
+    height: auto;
     overflow: hidden;
 }
 .container::after{

@@ -12,7 +12,7 @@
 				font-family: 'Raleway', sans-serif;
 				font-weight: bold;
 			}
-			.tituloP{
+			#tituloP{
 				text-align: center;
 				margin-top: 5%;
 				color: rgb(48, 48, 48);
@@ -25,13 +25,13 @@
 				background-color: rgb(48, 48, 48);
 				border-color: rgb(48, 48, 48);
 			}
-			.container{
+			#container{
 				width: 98vw;
 				height: 95vh;
 				overflow: hidden;
 			}
 			
-			.container::after{
+			#container::after{
 				content: '';
 				width: 100%;
 				height: 100%;
@@ -45,14 +45,14 @@
 				filter: blur(10px);
 			}
 			#definicion{
-				height: 17%;
+				height: auto;
 				width: 22%;
 				background-color: rgb(48, 48, 48);
 				margin-top: 2%;
 				margin-left: calc(50% - 11%);
 				border-radius: 15px;			
 			}
-			.tituloD{
+			#tituloD{
 				text-align: center;
 				padding-top: 5px;
 				color: #52bad1;
@@ -161,20 +161,20 @@
 			a{
 				text-decoration: none;
 			}
-			.back{
+			#back{
 				position: absolute;
 				transition: .3s;
 			}
-			.back hr{
+			#back hr{
 				margin-top: -16px;
 				width: 100%;
 				height: 2px;
 			}
-			.back a{
+			#back a{
 				color: rgb(48, 48, 48);
 				text-decoration: none;
 			}
-			.back a:hover{
+			#back a:hover{
 				color: #52bad1;
 				transition: .3s;
 			}
@@ -192,22 +192,22 @@
 	</head>
 
 <body>
-	<div class="container">
-		<div class="back">
+	<div id="container">
+		<div id="back">
 			<a href="./../../../../index.html"><p>BACK</p></a>
 			<hr>
 		</div>
-		<h1 class="tituloP">:valid & :invalid</h1>
+		<h1 id="tituloP">:valid & :invalid</h1>
 		<hr>
 		<div id="definicion">
-			<h1 class="tituloD">DEFINICIÓN</h1>
-			<p>representa cualquier elemento "input" u otro elemento "form" cuyos contenidos sean validos o inválidos.</p>
+			<h1 id="tituloD">DEFINICIÓN</h1>
+			<p>Representa cualquier elemento "input" u otro elemento "form" cuyos contenidos sean validos o inválidos.</p>
 		</div>
 		<div id="cont">
 			<div class="contblock">
-				<img id="html"src="./html-css-image/html.png" alt="codigo html">
+				<img id="html" src="./html-css-image/html.png" alt="codigo html">
 					<p id="nombreH" class="nombre">HTML</p>
-				<img id="css"src="./html-css-image/css.png" alt="codigo css">
+				<img id="css" src="./html-css-image/css.png" alt="codigo css">
 					<p id="nombreC" class="nombre">CSS</p>
 			</div>
 			<div class="contblock" id="contblock2">

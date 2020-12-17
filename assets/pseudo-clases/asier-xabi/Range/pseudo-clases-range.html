@@ -12,7 +12,7 @@
 				font-family: 'Raleway', sans-serif;
 				font-weight: bold;
 			}
-			.tituloP{
+			#tituloP{
 				text-align: center;
 				margin-top: 5%;
 				color: rgb(48, 48, 48);
@@ -25,13 +25,13 @@
 				background-color: rgb(48, 48, 48);
 				border-color: rgb(48, 48, 48);
 			}
-			.container{
+			#container{
 				width: 98vw;
 				height: 95vh;
 				overflow: hidden;
 			}
 			
-			.container::after{
+			#container::after{
 				content: '';
 				width: 100%;
 				height: 100%;
@@ -45,14 +45,14 @@
 				filter: blur(10px);
 			}
 			#definicion{
-				height: 17%;
+				height: auto;
 				width: 22%;
 				background-color: rgb(48, 48, 48);
 				margin-top: 2%;
 				margin-left: calc(50% - 11%);
 				border-radius: 15px;			
 			}
-			.tituloD{
+			#tituloD{
 				text-align: center;
 				padding-top: 5px;
 				color: #52bad1;
@@ -169,36 +169,39 @@
 			a{
 				text-decoration: none;
 			}
-			.back{
+			#back{
 				position: absolute;
 				transition: .3s;
 			}
-			.back hr{
+			#back hr{
 				margin-top: -16px;
 				width: 100%;
 				height: 2px;
 			}
-			.back a{
+			#back a{
 				color: rgb(48, 48, 48);
 				text-decoration: none;
 			}
-			.back a:hover{
+			#back a:hover{
 				color: #52bad1;
 				transition: .3s;
+			}
+			h3{
+				color:white;
 			}
 		</style>
 	</head>
 
 <body>
-	<div class="container">
-		<div class="back">
+	<div id="container">
+		<div id="back">
 			<a href="./../../../../index.html"><p>BACK</p></a>
 			<hr>
 		</div>
-		<h1 class="tituloP">:in-range & :out-of-range</h1>
+		<h1 id="tituloP">:in-range & :out-of-range</h1>
 		<hr>
 		<div id="definicion">
-			<h1 class="tituloD">DEFINICIÓN</h1>
+			<h1 id="tituloD">DEFINICIÓN</h1>
 			<p>Representa un elemento "input", cuyo valor esta fuera de los límites del rango especificado por los atributos "min" & "max"</p>
 		</div>
 		<div id="cont">
@@ -209,6 +212,7 @@
 					<p id="nombreC" class="nombre">CSS</p>
 			</div>
 			<div class="contblock" id="contblock2">
+				<h3>Ejemplo:</h3>
 				<input id="value1" name="value1" type="number" placeholder="1 a 10" min="1" max="10" value="12">
       			<label for="value1">Tu valor esta </label>
 

@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="es">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,7 +12,7 @@
 				font-family: 'Raleway', sans-serif;
 				font-weight: bold;
 			}
-			.tituloP{
+			#tituloP{
 				text-align: center;
 				margin-top: 5%;
 				color: rgb(48, 48, 48);
@@ -21,17 +21,17 @@
 			hr{
 				margin-top: -35px;
 				height: 4px;
-				width: 50%;
+				width: 15%;
 				background-color: rgb(48, 48, 48);
 				border-color: rgb(48, 48, 48);
 			}
-			.container{
+			#container{
 				width: 98vw;
 				height: 95vh;
 				overflow: hidden;
 			}
 			
-			.container::after{
+			#container::after{
 				content: '';
 				width: 100%;
 				height: 100%;
@@ -45,14 +45,14 @@
 				filter: blur(10px);
 			}
 			#definicion{
-				height: 17%;
+				height: auto;
 				width: 22%;
 				background-color: rgb(48, 48, 48);
 				margin-top: 2%;
 				margin-left: calc(50% - 11%);
 				border-radius: 15px;			
 			}
-			.tituloD{
+			#tituloD{
 				text-align: center;
 				padding-top: 5px;
 				color: #52bad1;
@@ -122,33 +122,33 @@
 				filter: blur(2px);
 				transition: .5s;
 			}
-			.nombreH{
+			#nombreH{
 				transition: .5s;
 				top: 15%;
 			}
-			.nombreC{
+			#nombreC{
 				top: 68%;
 				transition: .5s;
 			}
-			#nombre{
+			.nombre{
 				position: absolute;
 				color: white;
 				font-size: 3vh;
 				font-weight: bold;
 				opacity: 0;
 			}
-			#nombre2{
+			/*#nombre2{
 				position: absolute;
 				color: white;
 				font-size: 3vh;
 				font-weight: bold;
 				opacity: 0;
-			}
-			#html:hover ~ .nombreH{
+			}*/
+			#html:hover ~ #nombreH{
 				opacity: 1;
 				transition: .5s;
 			}
-			#css:hover ~ .nombreC{
+			#css:hover ~ #nombreC{
 				opacity: 1;
 				transition: .5s;
 			}
@@ -179,27 +179,27 @@
 			a{
 				text-decoration: none;
 			}
-			.back{
+			#back{
 				position: absolute;
 				transition: .3s;
 			}
-			.back hr{
+			#back hr{
 				margin-top: -16px;
 				width: 100%;
 				height: 2px;
 			}
-			.back a{
+			#back a{
 				color: rgb(48, 48, 48);
 				text-decoration: none;
 			}
-			.back a:hover{
+			#back a:hover{
 				color: #52bad1;
 				transition: .3s;
 			}
-			.formulario{
+			#formulario{
 				color: white;
 			}
-			.formulario input{
+			#formulario input{
 				color: black;
 			}
 
@@ -233,30 +233,34 @@
 				color: #52bad1;
 				background-color: rgb(48, 48, 48);
 			}
+			h3{
+				color: white;
+			}
 		</style>
 	</head>
 
 <body>
-	<div class="container">
-		<div class="back">
+	<div id="container">
+		<div id="back">
 			<a href="./../../../../index.html"><p>BACK</p></a>
 			<hr>
 		</div>
-		<h1 class="tituloP">:focus</h1>
+		<h1 id="tituloP">:focus</h1>
 		<hr>
 		<div id="definicion">
-			<h1 class="tituloD">DEFINICIÓN</h1>
+			<h1 id="tituloD">DEFINICIÓN</h1>
 			<p>El Focus solo funciona con elementos input y sirve para dar formato a este cunado haces clic, tocas un elemento o haces tab.</p>
 		</div>
 		<div id="cont">
 			<div class="contblock">
 				<img id="html" src="./html-css-image/html.png" alt="ejemplo código html">
-					<p class="nombreH" id="nombre">HTML</p>
+					<p id="nombreH" class="nombre">HTML</p>
 				<img id="css" src="./html-css-image/css.png" alt="ejemplo código css">
-					<p class="nombreC" id="nombre2">CSS</p>
+					<p id="nombreC" class="nombre">CSS</p>
 			</div>
 			<div class="contblock" id="contblock2">
-				<form class="formulario">
+				<h3>Ejemplo:</h3>
+				<form id="formulario">
 					Nombre: <input id="bar" type="text" name="nombre"><br>
 					Apellido 1: <input id="box" type="text" name="ap1"><br>
 					Apellido 2: <input id="tag" type="text" name="ap2"><br>

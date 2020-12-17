@@ -12,7 +12,7 @@
 				font-family: 'Raleway', sans-serif;
 				font-weight: bold;
 			}
-			.tituloP{
+			#tituloP{
 				text-align: center;
 				margin-top: 5%;
 				color: rgb(48, 48, 48);
@@ -25,13 +25,13 @@
 				background-color: rgb(48, 48, 48);
 				border-color: rgb(48, 48, 48);
 			}
-			.container{
+			#container{
 				width: 98vw;
 				height: 95vh;
 				overflow: hidden;
 			}
 			
-			.container::after{
+			#container::after{
 				content: '';
 				width: 100%;
 				height: 100%;
@@ -45,16 +45,16 @@
 				filter: blur(10px);
 			}
 			#definicion{
-				height: 19%;
+				height: auto;
 				width: 22%;
 				background-color: rgb(48, 48, 48);
 				margin-top: 2%;
 				margin-left: calc(50% - 13%);
 				border-radius: 15px;			
 			}
-			#definicion p{
-			}
-			.tituloD{
+			/*#definicion p{
+			}*/
+			#tituloD{
 				text-align: center;
 				padding-top: 5px;
 				color: #52bad1;
@@ -124,53 +124,53 @@
 				filter: blur(2px);
 				transition: .5s;
 			}
-			.nombreH{
+			#nombreH{
 				transition: .5s;
 				top: 13%;
 			}
-			.nombreC{
+			#nombreC{
 				top: 65%;
 				transition: .5s;
 			}
-			#nombre{
+			.nombre{
 				position: absolute;
 				color: white;
 				font-size: 3vh;
 				font-weight: bold;
 				opacity: 0;
 			}
-			#nombre2{
+			/*#nombre2{
 				position: absolute;
 				color: white;
 				font-size: 3vh;
 				font-weight: bold;
 				opacity: 0;
-			}
-			#html:hover ~ .nombreH{
+			}*/
+			#html:hover ~ #nombreH{
 				opacity: 1;
 				transition: .5s;
 			}
-			#css:hover ~ .nombreC{
+			#css:hover ~ #nombreC{
 				opacity: 1;
 				transition: .5s;
 			}
 			a{
 				text-decoration: none;
 			}
-			.back{
+			#back{
 				position: absolute;
 				transition: .3s;
 			}
-			.back hr{
+			#back hr{
 				margin-top: -16px;
 				width: 100%;
 				height: 2px;
 			}
-			.back a{
+			#back a{
 				color: rgb(48, 48, 48);
 				text-decoration: none;
 			}
-			.back a:hover{
+			#back a:hover{
 				color: #52bad1;
 				transition: .3s;
 			}
@@ -183,34 +183,38 @@
 				transition: .5s;
 			}
 			#contblock2 a:link{
-				color:aquamarine;
+				color:rgb(203, 255, 238);
 			}
 			#contblock2 a:visited{
 				color: #52bad1;
+			}
+			h3{
+				color:white
 			}
 		</style>
 	</head>
 
 <body>
-	<div class="container">
-		<div class="back">
+	<div id="container">
+		<div id="back">
 			<a href="./../../../../index.html"><p>BACK</p></a>
 			<hr>
 		</div>
-		<h1 class="tituloP">:link & :visited</h1>
+		<h1 id="tituloP">:link & :visited</h1>
 		<hr>
 		<div id="definicion">
-			<h1 class="tituloD">DEFINICIÓN</h1>
+			<h1 id="tituloD">DEFINICIÓN</h1>
 			<p>El Link funciona solo cuando hay una referencia "a" y dentro de este hay un link asignado. Lo que hace este es dar formato al "link o referencia" antes de ser visitado</p>
 		</div>
 		<div id="cont">
 			<div class="contblock">
 				<img id="html" src="./html-css-image/html.png" alt="ejemplo código html">
-					<p class="nombreH" id="nombre">HTML</p>
+					<p id="nombreH" class="nombre">HTML</p>
 				<img id="css" src="./html-css-image/css.png" alt="ejemplo código css">
-					<p class="nombreC" id="nombre2">CSS</p>
+					<p id="nombreC" class="nombre">CSS</p>
 			</div>
 			<div class="contblock" id="contblock2">
+				<h3>Ejemplo:</h3>
 				<a href="https://www.spacex.com/" target="_blank">SpaceX </a> <br>
 				<a href="https://www.youtube.com/" target="_blank">Youtube </a><br>
 				<a href="http://aula0.cuatrovientos.org/" target="_blank">Aula0</a><br>

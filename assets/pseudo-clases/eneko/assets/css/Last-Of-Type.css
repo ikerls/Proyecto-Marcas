@@ -97,3 +97,23 @@ p{
 article :last-of-type {
     background-color: #52bad1;
 }
+#back{
+    position: absolute;
+    transition: .3s;
+}
+#back p{
+    color: black;
+}
+#back hr{
+    margin-top: -16px;
+    width: 100%;
+    height: 2px;
+}
+#back a{
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+}
+#back a:hover{
+    color: #52bad1;
+    transition: .3s;
+}
